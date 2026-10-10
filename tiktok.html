@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login do TikTok</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; background: #fff; }
+  code { display: block; padding: 12px; background: #f2f2f2; border-radius: 6px; word-break: break-all; font-size: 15px; }
+  button { margin-top: 12px; padding: 8px 16px; font-size: 15px; cursor: pointer; }
+  .erro { color: #b00020; }
+</style>
+</head>
+<body>
+<h1>Automacao-shorts – Login do TikTok</h1>
+<div id="resultado">Carregando…</div>
+<p><a href="index.html">Início</a> · <a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a></p>
+<script>
+  // O TikTok volta para esta página com ?code=...&state=... depois do login.
+  // A página só mostra o código para ser copiado no computador do dono; nada é enviado a lugar nenhum.
+  const p = new URLSearchParams(location.search);
+  const caixa = document.getElementById("resultado");
+  if (p.get("code")) {
+    caixa.innerHTML = "<p>Login concluído. Copie o comando abaixo e cole no Claude Code (ou rode no PowerShell, na pasta do projeto):</p>";
+    const cmd = document.createElement("code");
+    cmd.textContent = 'py publicar_tiktok.py --codigo "' + p.get("code") + '" --state "' + (p.get("state") || "") + '"';
+    const botao = document.createElement("button");
+    botao.textContent = "Copiar";
+    botao.onclick = () => navigator.clipboard.writeText(cmd.textContent).then(() => botao.textContent = "Copiado!");
+    caixa.append(cmd, botao);
+  } else if (p.get("error")) {
+    caixa.className = "erro";
+    caixa.textContent = "O TikTok recusou o login: " + p.get("error") + " – " + (p.get("error_description") || "");
+  } else {
+    caixa.textContent = "Esta página recebe o retorno do login do TikTok. Abra-a pelo comando py publicar_tiktok.py --login.";
+  }
+</script>
+</body>
+</html>
