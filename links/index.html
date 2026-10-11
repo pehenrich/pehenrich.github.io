@@ -47,6 +47,13 @@
   .produto span { color: var(--suave); font-size: 14px; }
   .botao { font-weight: 800; font-size: 14px; color: var(--noite); white-space: nowrap;
     background: linear-gradient(90deg, var(--rosa), var(--laranja)); border-radius: 999px; padding: 8px 14px; }
+  .vitrine { display: grid; gap: 2px; text-align: center; text-decoration: none; color: var(--noite);
+    font: 26px/1.1 var(--titulo); letter-spacing: .03em; text-transform: uppercase;
+    background: linear-gradient(90deg, var(--rosa), var(--laranja)); border-radius: 16px; padding: 18px 16px;
+    box-shadow: 0 10px 30px rgba(255,62,154,.35); transition: transform .15s; }
+  .vitrine small { font: 600 14px/1.2 var(--corpo); text-transform: none; letter-spacing: 0; }
+  .vitrine:hover, .vitrine:focus-visible { transform: translateY(-2px); outline: none; }
+  @media (prefers-reduced-motion: reduce) { .vitrine { transition: none; } }
   footer { text-align: center; color: var(--suave); font-size: 13px; display: grid; gap: 4px; }
   @media (prefers-reduced-motion: reduce) { .produto { transition: none; } }
 </style>
@@ -59,6 +66,7 @@
     <p class="descricao">Cortes e novidades de GTA 6 e do mundo dos games, todo dia.</p>
     <nav class="redes"><a href="https://www.youtube.com/@jornalbadaras" target="_blank" rel="noopener">YouTube</a></nav>
   </header>
+  <a class="vitrine" href="https://meli.la/1yGaSua" target="_blank" rel="noopener sponsored">Minhas indicações de games<small>vitrine no Mercado Livre</small></a>
   <h2>Produtos dos vídeos</h2>
   <section class="produtos">
     <a class="produto" href="https://meli.la/1xTkqn4" target="_blank" rel="noopener sponsored"><div><strong>Suporte de controle GTA VI</strong><span>Mercado Livre</span></div><div class="botao">Ver oferta</div></a>
