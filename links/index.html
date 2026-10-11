@@ -2,81 +2,11 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Jornal Badaras · links</title>
-<meta name="description" content="Cortes e novidades de GTA 6 e do mundo dos games, todo dia.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&display=swap">
-<style>
-  /* Pôr do sol de Vice City: fundo roxo-noite, degradê rosa -> laranja nos destaques */
-  :root {
-    --noite: #1a0b2e; --noite-2: #2a1145; --texto: #fff6fb; --suave: #d9c4e6;
-    --rosa: #ff3e9a; --laranja: #ffb04f; --turquesa: #3fd0ff; --borda: rgba(255,255,255,.14);
-    --titulo: "Anton", Impact, "Arial Black", sans-serif;
-    --corpo: "Archivo", "Segoe UI", system-ui, sans-serif;
-    color-scheme: dark;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; min-height: 100%; }
-  body {
-    background: radial-gradient(120% 70% at 50% 0%, #4a1658 0%, var(--noite-2) 45%, var(--noite) 100%) fixed;
-    color: var(--texto); font: 16px/1.5 var(--corpo);
-    padding: calc(env(safe-area-inset-top, 0px) + 40px) 16px calc(env(safe-area-inset-bottom, 0px) + 40px);
-  }
-  main { max-width: 520px; margin: 0 auto; display: grid; gap: 28px; }
-  header { text-align: center; display: grid; gap: 8px; justify-items: center; }
-  .sol { width: 84px; height: 84px; border-radius: 50%;
-    background: linear-gradient(180deg, var(--laranja) 0%, var(--rosa) 70%);
-    box-shadow: 0 0 40px rgba(255,62,154,.45); display: grid; place-items: center;
-    font: 34px/1 var(--titulo); color: var(--noite); }
-  h1 { margin: 6px 0 0; font: 44px/1 var(--titulo); letter-spacing: .02em; text-transform: uppercase;
-    background: linear-gradient(180deg, var(--rosa), var(--laranja)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .descricao { margin: 0; color: var(--suave); max-width: 38ch; }
-  .redes { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
-  .redes a { color: var(--texto); text-decoration: none; font-weight: 600; font-size: 14px;
-    border: 1px solid var(--borda); border-radius: 999px; padding: 6px 14px; }
-  .redes a:hover { border-color: var(--turquesa); color: var(--turquesa); }
-  h2 { margin: 0 0 -12px; font: 14px/1 var(--corpo); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--turquesa); }
-  .produtos { display: grid; gap: 12px; }
-  .produto { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 12px;
-    text-decoration: none; color: var(--texto); background: rgba(255,255,255,.06);
-    border: 1px solid var(--borda); border-radius: 14px; padding: 16px 18px; transition: transform .15s, border-color .15s; }
-  .produto:hover, .produto:focus-visible { transform: translateY(-2px); border-color: var(--rosa); outline: none; }
-  .produto strong { display: block; font-size: 18px; font-weight: 800; }
-  .produto span { color: var(--suave); font-size: 14px; }
-  .botao { font-weight: 800; font-size: 14px; color: var(--noite); white-space: nowrap;
-    background: linear-gradient(90deg, var(--rosa), var(--laranja)); border-radius: 999px; padding: 8px 14px; }
-  .vitrine { display: grid; gap: 2px; text-align: center; text-decoration: none; color: var(--noite);
-    font: 26px/1.1 var(--titulo); letter-spacing: .03em; text-transform: uppercase;
-    background: linear-gradient(90deg, var(--rosa), var(--laranja)); border-radius: 16px; padding: 18px 16px;
-    box-shadow: 0 10px 30px rgba(255,62,154,.35); transition: transform .15s; }
-  .vitrine small { font: 600 14px/1.2 var(--corpo); text-transform: none; letter-spacing: 0; }
-  .vitrine:hover, .vitrine:focus-visible { transform: translateY(-2px); outline: none; }
-  @media (prefers-reduced-motion: reduce) { .vitrine { transition: none; } }
-  footer { text-align: center; color: var(--suave); font-size: 13px; display: grid; gap: 4px; }
-  @media (prefers-reduced-motion: reduce) { .produto { transition: none; } }
-</style>
+<meta http-equiv="refresh" content="0; url=https://jornalbadaras.github.io/">
+<link rel="canonical" href="https://jornalbadaras.github.io/">
 </head>
-<body>
-<main>
-  <header>
-    <div class="sol" aria-hidden="true">J</div>
-    <h1>Jornal Badaras</h1>
-    <p class="descricao">Cortes e novidades de GTA 6 e do mundo dos games, todo dia.</p>
-    <nav class="redes"><a href="https://www.youtube.com/@jornalbadaras" target="_blank" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@jornal_badaras" target="_blank" rel="noopener">TikTok</a></nav>
-  </header>
-  
-  <h2>Produtos dos vídeos</h2>
-  <section class="produtos">
-    <a class="produto" href="https://meli.la/1xTkqn4" target="_blank" rel="noopener sponsored"><div><strong>Suporte de controle GTA VI</strong><span>Mercado Livre</span></div><div class="botao">Ver oferta</div></a>
-    <a class="produto" href="https://meli.la/1VvL4yp" target="_blank" rel="noopener sponsored"><div><strong>GTA VI</strong><span>Mercado Livre</span></div><div class="botao">Ver oferta</div></a>
-    <a class="produto" href="https://meli.la/1yGaSua" target="_blank" rel="noopener sponsored"><div><strong>PlayStation 5 de 1 TB com Astro Bot e Gran Turismo 7</strong><span>Mercado Livre</span></div><div class="botao">Ver oferta</div></a>
-  </section>
-  <footer>
-    <p>Links de afiliado: posso ganhar comissão nas compras, sem custo extra para você.</p>
-    <p>Atualizado em 10/10/2026</p>
-  </footer>
-</main>
+<body style="background:#1a0b2e;color:#fff6fb;font-family:system-ui,sans-serif;padding:40px 16px;text-align:center">
+<p>A página mudou para <a style="color:#ff3e9a" href="https://jornalbadaras.github.io/">jornalbadaras.github.io</a>.</p>
 </body>
 </html>
